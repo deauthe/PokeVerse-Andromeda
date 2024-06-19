@@ -15,7 +15,7 @@ const Card = (props: any) => {
     setLoading(true);
     setTimeout(() => {
       if (text === "Enter in AR") {
-        window.location.href = 'https://localhost:3000';
+        window.location.href = 'https://dapp-thon-seven.vercel.app';
       } else {
         window.location.href = '/';
       }

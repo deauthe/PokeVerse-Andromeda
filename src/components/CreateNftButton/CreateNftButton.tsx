@@ -188,7 +188,7 @@ const CreateNftButton = ({
 	};
 	return (
 		<Wrapper>
-			<div className="content mx-auto flex flex-col gap-10 px-20 w-1/2 border-2 border-red-400 p-3 py-8  shadow-lg mt-[12em]">
+			<div className="content mx-auto flex flex-col gap-10 px-20 w-1/2 border-2 border-red-400 glassmorphism p-3 py-8  shadow-lg mt-[12em]">
 				<Form.Control
 					type="file"
 					required
