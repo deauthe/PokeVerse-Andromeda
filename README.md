@@ -1,5 +1,10 @@
 # PokeVerse Platform
 
+<p>&nbsp;</p>
+<p align="center">
+<img src="./public/logo-2.png" width=500>
+</p>
+
 ## Project Description
 
 PokeVerse is an augmented reality (AR) and blockchain-based game where players engage in immersive Pokémon battles, using and earning NFTs to ensure a decentralized, transparent, and unique gameplay experience. The platform features a robust NFT gating mechanism, allowing users to mint and manage their AR-powered NFTs, character NFTs, and attack NFTs. Victorious players in Pokémon battles are rewarded with additional NFTs.
