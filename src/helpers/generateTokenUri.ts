@@ -26,5 +26,7 @@ export const generateTokens = (
 			},
 		};
 	});
+	console.log("tokens", tokens);
 	return tokens;
 };
+generateTokens();

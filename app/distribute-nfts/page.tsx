@@ -9,9 +9,6 @@ import {
 	EncodeObject,
 	isTxBodyEncodeObject,
 } from "@cosmjs/proto-signing";
-import { all } from "axios";
-import { log } from "console";
-import Image from "next/image";
 import { useRouter, useSearchParams } from "next/navigation";
 import React, { useEffect, useState } from "react";
 
