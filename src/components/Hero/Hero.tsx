@@ -36,16 +36,17 @@ const HeroBanner = () => {
 				</div>
 
 				<div
-					className={`hidden ${
+					className={` ${
 						// account.length > 0 && nfts != 0 && is
 						// ? ""
 						// :
-						"blur-[2px] pointer-events-none"
+						" pointer-events-none"
 					} lg:w-[60%]  glassmorphism border-2 border-red-500 p-6 relative flex flex-col place-items-center before:absolute before:h-[300px] before:w-[700px] before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-[240px] after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-blue-700/10 after:dark:from-sky-900 after:dark:via-[#0141ff]/40 before:lg:h-[360px]`}
 				>
 					<p className="font text-sm md:text-xl tracking-[7px] text-white  ">
 						Enter in Pokemon Game{" "}
 					</p>
+
 					<Card text={"Enter in Game"} image={dragon} />
 				</div>
 			</div>

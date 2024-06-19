@@ -22,14 +22,14 @@ const RootLayout = async (props: Props) => {
 
 	return (
 		<html lang="en">
-			<body className="relative bg-black w-full m-auto">
+			<body className="relative bg-black  w-full m-auto">
 				<div className="fixed inset-0 -z-50 opacity-50">
 					<Image
 						src={"/background.png"}
 						alt="haha"
 						layout="fill"
 						objectFit="cover"
-						className="object-fill -z-10"
+						className="object-fill "
 					/>
 				</div>
 				<Providers>

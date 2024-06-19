@@ -27,54 +27,105 @@ const MarketPlace = (props: Props) => {
 			<div className="flex">
 				<Button className="mx-auto">Query MarketPlace</Button>
 			</div>
-			<div className="grid lg:grid-cols-4  grid-cols-4 gap-9 relative  mt-[6em] ">
+			<div>
 				{["0"].map((item, index) => {
 					return (
-						<div key={index}>
-							<div
-								key={index}
-								className="relative w-full h-full m-auto rounded-lg shadow-md p-4 overflow-hidden border-3 border-red-400 glassmorphism  "
-								style={{
-									height: "250px",
-									width: "350px",
-								}}
-							>
-								{/* Background Image
-                <Image
-                  src="/NFT-Frame.png"
-                  layout="fill"
-                  objectFit="contain"
-                  alt="NFT Frame"
-                  className="absolute inset-0 z-20"
-                /> */}
-
-								{/* Foreground Image */}
-								<div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[320px] h-[200px] z-10 -mt-3">
-									<Image
-										src="/png-image.png"
-										layout="fill"
-										objectFit="cover"
-										alt="NFT Image"
-										className="z-10"
-									/>
-								</div>
-								{/* <div className="absolute top-1/2 left-1/2 text-white transform -translate-x-1/2 -translate-y-1/2   bg opacity-100 hover:opacity-100 w-[320px] h-[180px] cursor-pointer z-40">
-                <p className=" mt-0 pt-3 pl-4   ">
-                  <span
-                  className="bg-red-400 p-2  rounded-lg font-extrabold" 
-                  >1/100</span>
-                </p>
-                </div> */}
+						<div
+							key={index}
+							className="grid lg:grid-cols-3  grid-cols-3 gap-9 relative  mt-[6em] min-h-screen"
+						>
+							{/* Foreground Image */}
+							<div className="col-span-1">
+								<Image
+									src="/png-image.png"
+									width={300}
+									height={300}
+									alt="NFT Image"
+									className="z-10"
+								/>
+								<button
+									onClick={() => handleBuyNft("1")}
+									className="btn btn-primary rounded-full btn-sm h-6 mx-auto w-fit"
+								>
+									buy random nft
+								</button>
 							</div>
-							<button
-								onClick={() => handleBuyNft("1")}
-								className="btn btn-primary rounded-full btn-sm h-6"
-							>
-								buy random nft
-							</button>
+							<div className="col-span-1">
+								<Image
+									src="/png-image.png"
+									width={300}
+									height={300}
+									alt="NFT Image"
+									className="z-10"
+								/>
+								<button
+									onClick={() => handleBuyNft("1")}
+									className="btn btn-primary rounded-full btn-sm h-6"
+								>
+									buy random nft
+								</button>
+							</div>
+							<div className="col-span-1">
+								<Image
+									src="/png-image.png"
+									width={300}
+									height={300}
+									alt="NFT Image"
+									className="z-10"
+								/>
+								<button
+									onClick={() => handleBuyNft("1")}
+									className="btn btn-primary rounded-full btn-sm h-6"
+								>
+									buy random nft
+								</button>
+							</div>
 
-							<div className="flex justify-center">
-								<CustomModal />
+							{/* assets */}
+							<div className="col-span-1">
+								<Image
+									src="/apple-touch-icon.png"
+									width={300}
+									height={300}
+									alt="NFT Image"
+									className="z-10"
+								/>
+								<button
+									onClick={() => handleBuyNft("1")}
+									className="btn btn-primary rounded-full btn-sm h-6"
+								>
+									buy random nft
+								</button>
+							</div>
+							<div className="col-span-1">
+								<Image
+									src="/apple-touch-icon.png"
+									width={300}
+									height={300}
+									alt="NFT Image"
+									className="z-10"
+								/>
+								<button
+									onClick={() => handleBuyNft("1")}
+									className="btn btn-primary rounded-full btn-sm h-6"
+								>
+									buy random nft
+								</button>
+							</div>
+							<div className="col-span-1 ">
+								<Image
+									src="/apple-touch-icon.png"
+									width={300}
+									height={300}
+									alt="NFT Image"
+									className="z-10"
+								/>
+								<button
+									onClick={() => handleBuyNft("1")}
+									className="btn btn-primary rounded-full btn-sm h-6"
+								>
+									buy random nft
+								</button>
 							</div>
 						</div>
 					);

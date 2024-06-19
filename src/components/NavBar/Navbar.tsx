@@ -6,6 +6,7 @@ import { BsCart } from "react-icons/bs";
 import { ConnectWallet } from "@/modules/wallet";
 import Image from "next/image";
 import { Dropdown } from "../ModalWindow/dropdown";
+import { useRouter } from "next/navigation";
 interface Category {
 	id: number;
 	attributes: {
@@ -18,6 +19,7 @@ interface Category {
 }
 
 const Navbar = () => {
+	const router = useRouter();
 	return (
 		<div
 			className={`w-[80%] mx-auto h-[50px] md:h-[80px]  flex justify-between  z-20  bg-none  shadow-lg top-0 transition-all duration-500  px-5 glassmorphism m-3 mt-[4em]  `}
@@ -51,13 +53,12 @@ const Navbar = () => {
 							51
 						</div>
 					</div>
-
-					{/* <Link href="/cart">
-            <div className="w-8 md:w-12 h-8 md:h-12 rounded-full flex justify-center items-center hover:bg-black/[0.05] cursor-pointer relative">
-              <BsCart className={`text-[15px] text-white md:text-[20px]`} />
-              
-            </div>
-          </Link> */}
+					<button
+						className="btn btn-primary btn-sm rounded-full"
+						onClick={() => router.push("https://dapp-thon-ta9c.vercel.app")}
+					>
+						Play the Game
+					</button>
 					<Dropdown />
 				</div>
 

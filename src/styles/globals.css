@@ -1,402 +1,381 @@
 @tailwind base;
-  @tailwind components;
-  @tailwind utilities;
+@tailwind components;
+@tailwind utilities;
 
-  @font-face {
-    font-family: RetroPix; /* Choose a name for your font */
-    src: url('/public/fonts/retropix.ttf') format('truetype'); /* Path to your .ttf file */
+@font-face {
+	font-family: RetroPix; /* Choose a name for your font */
+	src: url("/public/fonts/retropix.ttf") format("truetype"); /* Path to your .ttf file */
 }
 
 @font-face {
-  font-family: "pokemon";
-  src: url("../../public//PokemonSolid.ttf");
+	font-family: "pokemon";
+	src: url("../../public//PokemonSolid.ttf");
 }
 
 .font {
-  font-family: "pokemon";
+	font-family: "pokemon";
 }
 
-.fontFamily{
-  font-family: "RetroPix" , "Sans";
+.fontFamily {
+	font-family: "RetroPix", "Sans";
 }
 
-  @layer base {
-    :root {
-      --background: 0 0% 100%;
-      --foreground: 240 10% 3.9%;
+@layer base {
+	:root {
+		--background: 0 0% 100%;
+		--foreground: 240 10% 3.9%;
 
-      --card: 0 0% 100%;
-      --card-foreground: 240 10% 3.9%;
+		--card: 0 0% 100%;
+		--card-foreground: 240 10% 3.9%;
 
-      --popover: 0 0% 100%;
-      --popover-foreground: 240 10% 3.9%;
+		--popover: 0 0% 100%;
+		--popover-foreground: 240 10% 3.9%;
 
-      --primary: 240 5.9% 10%;
-      --primary-foreground: 0 0% 98%;
+		--primary: 240 5.9% 10%;
+		--primary-foreground: 0 0% 98%;
 
-      --secondary: 240 4.8% 95.9%;
-      --secondary-foreground: 240 5.9% 10%;
+		--secondary: 240 4.8% 95.9%;
+		--secondary-foreground: 240 5.9% 10%;
 
-      --muted: 240 4.8% 95.9%;
-      --muted-foreground: 240 3.8% 46.1%;
+		--muted: 240 4.8% 95.9%;
+		--muted-foreground: 240 3.8% 46.1%;
 
-      --accent: 240 4.8% 95.9%;
-      --accent-foreground: 240 5.9% 10%;
+		--accent: 240 4.8% 95.9%;
+		--accent-foreground: 240 5.9% 10%;
 
-      --destructive: 0 84.2% 60.2%;
-      --destructive-foreground: 0 0% 98%;
+		--destructive: 0 84.2% 60.2%;
+		--destructive-foreground: 0 0% 98%;
 
-      --border: 240 5.9% 90%;
-      --input: 240 5.9% 90%;
-      --ring: 240 10% 3.9%;
+		--border: 240 5.9% 90%;
+		--input: 240 5.9% 90%;
+		--ring: 240 10% 3.9%;
 
-      --radius: 0.5rem;
-    }
+		--radius: 0.5rem;
+	}
 
-    .dark {
-      --background: 240 10% 3.9%;
-      --foreground: 0 0% 98%;
+	.dark {
+		--background: 240 10% 3.9%;
+		--foreground: 0 0% 98%;
 
-      --card: 240 10% 3.9%;
-      --card-foreground: 0 0% 98%;
+		--card: 240 10% 3.9%;
+		--card-foreground: 0 0% 98%;
 
-      --popover: 240 10% 3.9%;
-      --popover-foreground: 0 0% 98%;
+		--popover: 240 10% 3.9%;
+		--popover-foreground: 0 0% 98%;
 
-      --primary: 0 0% 98%;
-      --primary-foreground: 240 5.9% 10%;
+		--primary: 0 0% 98%;
+		--primary-foreground: 240 5.9% 10%;
 
-      --secondary: 240 3.7% 15.9%;
-      --secondary-foreground: 0 0% 98%;
+		--secondary: 240 3.7% 15.9%;
+		--secondary-foreground: 0 0% 98%;
 
-      --muted: 240 3.7% 15.9%;
-      --muted-foreground: 240 5% 64.9%;
+		--muted: 240 3.7% 15.9%;
+		--muted-foreground: 240 5% 64.9%;
 
-      --accent: 240 3.7% 15.9%;
-      --accent-foreground: 0 0% 98%;
+		--accent: 240 3.7% 15.9%;
+		--accent-foreground: 0 0% 98%;
 
-      --destructive: 0 62.8% 30.6%;
-      --destructive-foreground: 0 0% 98%;
+		--destructive: 0 62.8% 30.6%;
+		--destructive-foreground: 0 0% 98%;
 
-      --border: 240 3.7% 15.9%;
-      --input: 240 3.7% 15.9%;
-      --ring: 240 4.9% 83.9%;
-    }
-  }
+		--border: 240 3.7% 15.9%;
+		--input: 240 3.7% 15.9%;
+		--ring: 240 4.9% 83.9%;
+	}
+}
 
-  @layer base {
-    * {
-      @apply border-border;
-    }
-    body {
-      @apply bg-background text-foreground;
-    }
-  }
+@layer base {
+	* {
+		@apply border-border;
+	}
+	body {
+		@apply bg-background text-foreground;
+	}
+}
 
-  .glassmorphism{
-    backdrop-filter: blur(2px) saturate(86%);
-    -webkit-backdrop-filter: blur(2px) saturate(86%);
-    background-color: rgba(17, 25, 40, 0.77);
-    border-radius: 12px;
-    border: 1px solid rgba(255, 255, 255, 0.125);
-    z-index: 9;
-  }
+.glassmorphism {
+	backdrop-filter: blur(2px) saturate(86%);
+	-webkit-backdrop-filter: blur(2px) saturate(86%);
+	background-color: rgba(17, 25, 40, 0.77);
+	border-radius: 12px;
+	border: 1px solid rgba(255, 255, 255, 0.125);
+	z-index: 9;
+}
 
-
-
-
-
-
-
-
-  
-
-
-
-
-
-.glassmorphism{
-  backdrop-filter: blur(2px) saturate(86%);
-  -webkit-backdrop-filter: blur(2px) saturate(86%);
-  background-color: rgba(17, 25, 40, 0.77);
-  border-radius: 12px;
-  border: 1px solid rgba(255, 255, 255, 0.125);
-  z-index: 9;
+.glassmorphism {
+	backdrop-filter: blur(2px) saturate(86%);
+	-webkit-backdrop-filter: blur(2px) saturate(86%);
+	background-color: rgba(17, 25, 40, 0.77);
+	border-radius: 12px;
+	border: 1px solid rgba(255, 255, 255, 0.125);
+	z-index: 9;
 }
 
 .font {
-  font-family: "pokemon";
+	font-family: "pokemon";
 }
 
 .shadow {
-  box-shadow: 1px -3px 84px -6px rgba(255, 222, 0, 0.65);
-  -webkit-box-shadow: 1px -3px 84px -6px rgba(255, 222, 0, 0.65);
-  -moz-box-shadow: 1px -3px 84px -6px rgba(255, 222, 0, 0.65);
+	box-shadow: 1px -3px 84px -6px rgba(255, 222, 0, 0.65);
+	-webkit-box-shadow: 1px -3px 84px -6px rgba(255, 222, 0, 0.65);
+	-moz-box-shadow: 1px -3px 84px -6px rgba(255, 222, 0, 0.65);
 }
 
 /* button */
-.btn {
-  border: none;
-  width: 15em;
-  height: 5em;
-  border-radius: 3em;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 12px;
-  background: #1C1A1C;
-  cursor: pointer;
-  transition: all 450ms ease-in-out;
-}
 
 .sparkle {
-  fill: #F7CC32;
-  transition: all 800ms ease;
+	fill: #f7cc32;
+	transition: all 800ms ease;
 }
 
 .text {
-  font-weight: 700;
-  color: #AAAAAA;
-  
-  font-size: larger;
+	font-weight: 700;
+	color: #aaaaaa;
+
+	font-size: larger;
 }
 
 .btn:hover {
-  background: linear-gradient(0deg,#f7cc32c2,#f7cc32db);
-  box-shadow: inset 0px 1px 0px 0px rgba(255, 255, 255, 0.4),
-  inset 0px -4px 0px 0px rgba(0, 0, 0, 0.2),
-  0px 0px 0px 4px rgba(255, 255, 255, 0.2),
-  0px 0px 180px 0px #F7CC32;
-  transform: translateY(-2px);
+	background: linear-gradient(0deg, #f7cc32c2, #f7cc32db);
+	box-shadow:
+		inset 0px 1px 0px 0px rgba(255, 255, 255, 0.4),
+		inset 0px -4px 0px 0px rgba(0, 0, 0, 0.2),
+		0px 0px 0px 4px rgba(255, 255, 255, 0.2),
+		0px 0px 180px 0px #f7cc32;
+	transform: translateY(-2px);
 }
 
 .btn:hover .text {
-  color: white;
+	color: white;
 }
 
 .btn:hover .sparkle {
-  fill: white;
-  transform: scale(1.2);
+	fill: white;
+	transform: scale(1.2);
 }
-
-
 
 /* input animation css */
 
-.form-item{
-  position: relative;
-  margin-bottom: 15px
+.form-item {
+	position: relative;
+	margin-bottom: 15px;
 }
-.form-item input{
-  display: block;
-  height: 40px;
-  background: transparent;
-  /* border: solid 1px #ccc; */
-  outline: none;
-  transition: all .3s ease;
-  padding: 0 15px;
-  color: rgba(255, 255, 255, 0.708);
-  
+.form-item input {
+	display: block;
+	height: 40px;
+	background: transparent;
+	/* border: solid 1px #ccc; */
+	outline: none;
+	transition: all 0.3s ease;
+	padding: 0 15px;
+	color: rgba(255, 255, 255, 0.708);
 }
-.form-item input:focus{
-  /* border-color: blue */
+.form-item input:focus {
+	/* border-color: blue */
 }
-.form-item label{
-  position: absolute;
-  cursor: text;
-  z-index: 2;
-  top: 8px;
-  left: 10px;
-  font-size: 17px;
-  font-weight: bold;
-  /* background: #fff; */
-  padding: 0 10px;
-  color:rgba(255, 255, 255, 0.541);
-  transition: all .3s ease
+.form-item label {
+	position: absolute;
+	cursor: text;
+	z-index: 2;
+	top: 8px;
+	left: 10px;
+	font-size: 17px;
+	font-weight: bold;
+	/* background: #fff; */
+	padding: 0 10px;
+	color: rgba(255, 255, 255, 0.541);
+	transition: all 0.3s ease;
 }
 .form-item input:focus + label,
-.form-item input:valid + label{
-  font-size: 17px;
-  top: -15px;
-  /* background:black; */
+.form-item input:valid + label {
+	font-size: 17px;
+	top: -15px;
+	/* background:black; */
 }
-.form-item input:focus + label{
-  /* color: blue */
+.form-item input:focus + label {
+	/* color: blue */
 }
 
 /* Swiper css */
 
 .swiper {
-  width: 80%;
-  /* height: 320px; */
-  margin: 0;
-  padding: 0;
+	width: 80%;
+	/* height: 320px; */
+	margin: 0;
+	padding: 0;
 }
 
 .swiper-slide {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 18px;
-  font-size: 22px;
-  font-weight: bold;
-  color: #fff;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-radius: 18px;
+	font-size: 22px;
+	font-weight: bold;
+	color: #fff;
 }
 
 .swiper-slide:nth-child(1n) {
-  background-color: rgb(206, 17, 17);
+	background-color: rgb(206, 17, 17);
 }
 
 .swiper-slide:nth-child(2n) {
-  background-color: rgb(0, 140, 255);
+	background-color: rgb(0, 140, 255);
 }
 
 .swiper-slide:nth-child(3n) {
-  background-color: rgb(10, 184, 111);
+	background-color: rgb(10, 184, 111);
 }
 
 .swiper-slide:nth-child(4n) {
-  background-color: rgb(211, 122, 7);
+	background-color: rgb(211, 122, 7);
 }
 
 .swiper-slide:nth-child(5n) {
-  background-color: rgb(118, 163, 12);
+	background-color: rgb(118, 163, 12);
 }
 
 .swiper-slide:nth-child(6n) {
-  background-color: rgb(180, 10, 47);
+	background-color: rgb(180, 10, 47);
 }
 
 .swiper-slide:nth-child(7n) {
-  background-color: rgb(35, 99, 19);
+	background-color: rgb(35, 99, 19);
 }
 
 .swiper-slide:nth-child(8n) {
-  background-color: rgb(0, 68, 255);
+	background-color: rgb(0, 68, 255);
 }
 
 .swiper-slide:nth-child(9n) {
-  background-color: rgb(218, 12, 218);
+	background-color: rgb(218, 12, 218);
 }
 
 .swiper-slide:nth-child(10n) {
-  background-color: rgb(54, 94, 77);
+	background-color: rgb(54, 94, 77);
 }
 
 /* button */
 .button {
-  width: 200px;
-  height: 60px;
-  border: 3px solid #f5841f;
-  border-radius: 45px;
-  transition: all 0.3s;
-  cursor: pointer;
-  background: transparent;
-  color:#f5841f;
-  font-size: 1.1em;
-  font-weight: 550;
-  font-family: 'Montserrat', sans-serif;
+	width: 200px;
+	height: 60px;
+	border: 3px solid #f5841f;
+	border-radius: 45px;
+	transition: all 0.3s;
+	cursor: pointer;
+	background: transparent;
+	color: #f5841f;
+	font-size: 1.1em;
+	font-weight: 550;
+	font-family: "Montserrat", sans-serif;
 }
 
 .button:hover {
-  background: #f5841f;
-  color: white;
-  font-size: 1.3em;
+	background: #f5841f;
+	color: white;
+	font-size: 1.3em;
 }
-
 
 /* Minting button nft creation  */
 
 .button-mint {
-  font-size: 18px;
-  letter-spacing: 2px;
-  text-transform: uppercase;
-  display: inline-block;
-  text-align: center;
-  font-weight: bold;
-  padding: 0.7em 2em;
-  border: 3px solid #F6CF57;
-  border-radius: 10px;
-  position: relative;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.1);
-  color: #F6CF57;
-  text-decoration: none;
-  transition: 0.3s ease all;
-  z-index: 1;
+	font-size: 18px;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+	display: inline-block;
+	text-align: center;
+	font-weight: bold;
+	padding: 0.7em 2em;
+	border: 3px solid #f6cf57;
+	border-radius: 10px;
+	position: relative;
+	box-shadow:
+		0 2px 10px rgba(0, 0, 0, 0.16),
+		0 3px 6px rgba(0, 0, 0, 0.1);
+	color: #f6cf57;
+	text-decoration: none;
+	transition: 0.3s ease all;
+	z-index: 1;
 }
 
 .button-mint:before {
-  transition: 0.5s all ease;
-  position: absolute;
-  top: 0;
-  left: 50%;
-  right: 50%;
-  bottom: 0;
-  opacity: 0;
-  content: '';
-  background-color: #F6CF57;
-  z-index: -1;
+	transition: 0.5s all ease;
+	position: absolute;
+	top: 0;
+	left: 50%;
+	right: 50%;
+	bottom: 0;
+	opacity: 0;
+	content: "";
+	background-color: #f6cf57;
+	z-index: -1;
 }
 
-.button-mint:hover, .button-mint:focus {
-  color: black;
+.button-mint:hover,
+.button-mint:focus {
+	color: black;
 }
 
-.button-mint:hover:before, .button-mint:focus:before {
-  transition: 0.5s all ease;
-  left: 0;
-  right: 0;
-  opacity: 1;
+.button-mint:hover:before,
+.button-mint:focus:before {
+	transition: 0.5s all ease;
+	left: 0;
+	right: 0;
+	opacity: 1;
 }
 
 .button-mint:active {
-  transform: scale(0.9);
+	transform: scale(0.9);
 }
 
 /* attacks mint  */
 
 .button-minti {
-  font-size: 18px;
-  letter-spacing: 2px;
-  text-transform: uppercase;
-  display: inline-block;
-  text-align: center;
-  font-weight: bold;
-  padding: 0.3em 1em;
-  border: 2px solid #F6CF57;
-  /* border-radius: 10px; */
-  position: relative;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.1);
-  color: #F6CF57;
-  text-decoration: none;
-  transition: 0.3s ease all;
-  z-index: 1;
+	font-size: 18px;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+	display: inline-block;
+	text-align: center;
+	font-weight: bold;
+	padding: 0.3em 1em;
+	border: 2px solid #f6cf57;
+	/* border-radius: 10px; */
+	position: relative;
+	box-shadow:
+		0 2px 10px rgba(0, 0, 0, 0.16),
+		0 3px 6px rgba(0, 0, 0, 0.1);
+	color: #f6cf57;
+	text-decoration: none;
+	transition: 0.3s ease all;
+	z-index: 1;
 }
 
 .button-minti:before {
-  transition: 0.5s all ease;
-  position: absolute;
-  top: 0;
-  left: 50%;
-  right: 50%;
-  bottom: 0;
-  opacity: 0;
-  content: '';
-  background-color: #F6CF57;
-  z-index: -1;
+	transition: 0.5s all ease;
+	position: absolute;
+	top: 0;
+	left: 50%;
+	right: 50%;
+	bottom: 0;
+	opacity: 0;
+	content: "";
+	background-color: #f6cf57;
+	z-index: -1;
 }
 
-.button-minti:hover, .button-minti:focus {
-  color: black;
+.button-minti:hover,
+.button-minti:focus {
+	color: black;
 }
 
-.button-minti:hover:before, .button-minti:focus:before {
-  transition: 0.5s all ease;
-  left: 0;
-  right: 0;
-  opacity: 1;
+.button-minti:hover:before,
+.button-minti:focus:before {
+	transition: 0.5s all ease;
+	left: 0;
+	right: 0;
+	opacity: 1;
 }
 
 .button-minti:active {
-  transform: scale(0.9);
+	transform: scale(0.9);
 }

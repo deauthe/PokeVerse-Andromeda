@@ -39,7 +39,7 @@ export const buyNftWithTokenId = async ({
 export const queryMarketPlaceUsingTokenIds = async (
 	client: AndromedaClient | undefined,
 
-	token_ids = [1, 2, 3, 4, 5, 6]
+	token_ids = [1, 2, 3, 4, 5]
 ) => {
 	if (!client) {
 		console.log("client missing");

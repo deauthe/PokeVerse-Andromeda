@@ -1,8 +1,7 @@
 import AndromedaClient from "@andromedaprotocol/andromeda.js";
-import { error } from "console";
 
 export const queryAllNfts = async (
-	client: AndromedaClient,
+	client: AndromedaClient | undefined,
 	contract_address: string
 ) => {
 	const queryMessage = {
@@ -12,6 +11,8 @@ export const queryAllNfts = async (
 	};
 	try {
 		const nfts = await client?.queryContract(contract_address, queryMessage);
+		console.log(nfts);
+
 		return nfts;
 	} catch (error) {
 		console.error(error);
