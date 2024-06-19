@@ -6,7 +6,7 @@ PokeVerse is an augmented reality (AR) and blockchain-based game where players e
 
 ## Project Video
 
-[Click here to watch the video](#)
+[Click here to watch the video](https://youtu.be/R-LaCke-BOA)
 
 ## Table of Contents
 
