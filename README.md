@@ -4,6 +4,9 @@
 
 PokeVerse is an augmented reality (AR) and blockchain-based game where players engage in immersive Pokémon battles, using and earning NFTs to ensure a decentralized, transparent, and unique gameplay experience. The platform features a robust NFT gating mechanism, allowing users to mint and manage their AR-powered NFTs, character NFTs, and attack NFTs. Victorious players in Pokémon battles are rewarded with additional NFTs.
 
+
+[Click here to play AR game](https://dapp-thon-ta9c.vercel.app)
+
 ## Project Video
 
 [Click here to watch the video](https://youtu.be/R-LaCke-BOA)
@@ -99,8 +102,6 @@ PokeVerse incorporates a resource management window or vault for in-game asset m
 
 This project utilizes the following ADOs from AndromedaOs:
 
-- [Timelock](https://docs.andromedaprotocol.io/andromeda/andromeda-digital-objects/timelock)
-- [Splitter](https://docs.andromedaprotocol.io/andromeda/andromeda-digital-objects/splitter)
 - [CW721](https://docs.andromedaprotocol.io/andromeda/andromeda-digital-objects/cw721)
 - [Marketplace](https://docs.andromedaprotocol.io/andromeda/andromeda-digital-objects/marketplace)
 - [CW20](https://docs.andromedaprotocol.io/andromeda/andromeda-digital-objects/cw20)
